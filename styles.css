@@ -1,0 +1,35 @@
+#header {
+    font-size: 35px;
+    color: white;
+    background-color:darkgreen;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+#myInput {
+    width: 15%;
+    padding: 10px;
+    font-size: 15px;
+    float: left;
+    border-radius: 2px;
+}
+
+.addBtn {
+    padding: 11px;
+    width: 25%;
+    background-color:lightgray;
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 2px;
+}
