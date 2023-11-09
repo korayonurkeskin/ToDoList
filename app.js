@@ -25,3 +25,22 @@ list.addEventListener('click', function(e) {
         e.target.classList.toggle('checked')
     } 
 }, false);
+
+// create a new task
+function newElement() {
+    const newTask = document.createElement('li');
+    const content = document.getElementById('myInput').value;
+    if (content.length === 0) {
+        alert('Please enter your task!')
+    } else {
+        const textNode = document.createTextNode(content);
+        newTask.appendChild(textNode);
+        list.appendChild(newTask);
+    }
+    // add close button
+    const span = document.createElement('span');
+    const txt = document.createTextNode("\u00D7");
+    span.className = 'close';
+    span.appendChild(txt);
+    newTask.appendChild(span);
+};
