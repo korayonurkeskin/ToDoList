@@ -8,3 +8,11 @@ for (let i = 0; i < taskList.length; i++) {
     span.appendChild(txt);
     taskList[i].appendChild(span);
 }
+
+// add delete task functionality
+const closeButtons = document.getElementsByClassName('close');
+for (let btn of closeButtons) {
+    btn.onclick = function() {
+        this.parentElement.style.display = "none";
+    }
+}
