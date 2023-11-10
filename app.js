@@ -43,4 +43,11 @@ function newElement() {
     span.className = 'close';
     span.appendChild(txt);
     newTask.appendChild(span);
+
+    // close button for new task
+    for (let btn of closeButtons) {
+        btn.onclick = function() {
+            this.parentElement.style.display = "none";
+        };
+    };
 };
